@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alexandra Kovalchuk](https://up.htmlacademy.ru/adaptive/20/user/1305465).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Фролова](https://up.htmlacademy.ru/adaptive/20/user/1043867).
 
 ---
 
