@@ -103,11 +103,8 @@
             <li class="testimonials__item slider__item">
               <p class="testimonials__review">
                 Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <p class="testimonials__author author">
-                Анастасия Красильникова
-                  <span class="author__username">@misssssiskras</span>
-                </p>
-              </p>
+              <p class="testimonials__author">Анастасия Красильникова</p>
+              <p class="testimonials__username">@misssssiskras</p>
             </li>
           </ul>
           <button class="testimonials__prev" type="button" aria-label="Предыдущий отзыв"></button>
@@ -118,14 +115,18 @@
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__row email">
-          <p class="email__title">e-mail:</p>
-          <a class="email__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </div>
-        <div class="contacts__row adress">
-          <p class="adress__title">адрес:</p>
-          <p class="adress__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-        </div>
+        <table>
+          <tr class="contacts__row email">
+            <th class="email__title">e-mail:</th>
+            <td class="email__value">
+              <a class="email__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </td>
+          </tr>
+          <tr class="contacts__row adress">
+            <th class="adress__title">адрес:</th>
+            <td class="adress__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
         <div class="contacts__map">
           <img class="map" src="https://via.placeholder.com/322x457" width="322" height="457" alt="Магазин Мишка на карте">
         </div>
