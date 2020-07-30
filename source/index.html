@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -33,7 +36,11 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-title page-title--main-page">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-title page-title--main-page">
+        Милые штуки<br>
+        ручной<br>
+        работы для дома
+      </h1>
 
       <section class="product-categories">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -67,7 +74,7 @@
             <td class="product-properties__value">15 см</td>
           </tr>
         </table>
-        <img class="product-of-the-week__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Вязаные корзины трех размеров">
+        <img class="product-of-the-week__image" src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзины трех размеров">
         <span class="product-of-the-week__price">Цена: 990 руб.</span>
         <button class="button product-of-the-week__button">Заказать</button>
       </section>
@@ -151,7 +158,7 @@
       <p class="developed">
         <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+          <img src="../img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>
