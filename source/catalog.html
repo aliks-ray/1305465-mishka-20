@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -36,48 +39,56 @@
       <h1 class="page-title">Каталог товаров</h1>
 
       <section class="products">
-        <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="products__list">
-          <li class="products__item product-card">
-            <a href="">
-              <img class="product-card__image product-card__image--rabbit" src="https://via.placeholder.com/260x195" alt="Вязаная игрушка «Зайчик попрыгайчик»">
-            </a>
-            <p class="product-card__title">
-              <a href="">Зайчик попрыгайчик</a>
-            </p>
-            <p class="product-card__description">Рост 30 см, вес 200 г</p>
-            <div class="product-card__price-wrapper">
-              <span class="product-card__price">1 200 руб.</span>
-              <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
-            </div>
-          </li>
-          <li class="products__item product-card">
-            <a href="">
-              <img class="product-card__image product-card__image--laundry-basket" src="https://via.placeholder.com/260x195" alt="Вязаная корзинка для белья">
-            </a>
-            <p class="product-card__title">
-              <a href="">Корзинка для белья</a>
-            </p>
-            <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
-            <div class="product-card__price-wrapper">
-              <span class="product-card__price">690 руб.</span>
-              <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
-            </div>
-          </li>
-          <li class="products__item product-card">
-            <a href="">
-              <img class="product-card__image product-card__image--big-toy-basket" src="https://via.placeholder.com/260x195" alt="Большая вязаная корзина для игрушек»">
-            </a>
-            <p class="product-card__title">
-              <a href="">Большая корзинка для игрушек</a>
-            </p>
-            <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
-            <div class="product-card__price-wrapper">
-              <span class="product-card__price">1 500 руб.</span>
-              <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
-            </div>
-          </li>
-        </ul>
+        <div class="products__wrapper">
+          <h2 class="visually-hidden">Список товаров</h2>
+          <ul class="products__list">
+            <li class="products__item product-card">
+              <a href="">
+                <img class="product-card__image product-card__image--rabbit" src="../img/photo-hare-mobile@1x.jpg" alt="Вязаная игрушка «Зайчик попрыгайчик»">
+              </a>
+              <div class="product-card__wrapper">
+                <p class="product-card__title">
+                  <a href="">Зайчик попрыгайчик</a>
+                </p>
+                <p class="product-card__description">Рост 30 см, вес 200 г</p>
+                <div class="product-card__price-wrapper">
+                  <span class="product-card__price">1 200 руб.</span>
+                  <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
+                </div>
+              </div>
+            </li>
+            <li class="products__item product-card">
+              <a href="">
+                <img class="product-card__image product-card__image--laundry-basket" src="../img/photo-bowl-mobile@1x.jpg" alt="Вязаная корзинка для белья">
+              </a>
+              <div class="product-card__wrapper">
+                <p class="product-card__title">
+                  <a href="">Корзинка для белья</a>
+                </p>
+                <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
+                <div class="product-card__price-wrapper">
+                  <span class="product-card__price">690 руб.</span>
+                  <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
+                </div>
+              </div>
+            </li>
+            <li class="products__item product-card">
+              <a href="">
+                <img class="product-card__image product-card__image--big-toy-basket" src="../img/photo-toys-mobile@1x.jpg" alt="Большая вязаная корзина для игрушек»">
+              </a>
+              <div class="product-card__wrapper">
+                <p class="product-card__title">
+                  <a href="">Большая корзинка для игрушек</a>
+                </p>
+                <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
+                <div class="product-card__price-wrapper">
+                  <span class="product-card__price">1 500 руб.</span>
+                  <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="production-process">
@@ -110,7 +121,7 @@
       <p class="developed">
         <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+          <img src="../img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>
