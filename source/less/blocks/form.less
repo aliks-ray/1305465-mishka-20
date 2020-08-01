@@ -1,0 +1,107 @@
+.order-form {
+  width: 260px;
+  margin: auto;
+}
+
+.order-form__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: @basic-grey;
+}
+
+.order-form__field {
+  padding: 0;
+  border: none;
+  margin-top: 34.5px;
+}
+
+.order-form__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @basic-green;
+}
+
+.order-form__list {
+  .no-list-style;
+  margin-top: 25px;
+}
+
+.order-form__item {
+
+  &--radio {
+    margin-bottom: 13px;
+  }
+
+  &--checkbox,
+  &--text-input {
+    margin-bottom: 22px;
+  }
+
+  &--contacts {
+    margin-bottom: 34px;
+  }
+}
+
+.order-form__label {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  padding-left: 64px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__item--checkbox:last-child,
+.order-form__item--text-input:last-child {
+  margin-bottom: 0;
+}
+
+.order-form__label--text-input {
+  padding-left: 0;
+}
+
+.order-form__text-input {
+  width: 100%;
+  min-height: 52px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid @basic-black;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.7);
+}
+
+.order-form__textarea {
+  width: 100%;
+  min-height: 142px;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 22px;
+  margin-bottom: 17px;
+  border: 2px solid @basic-grey;
+  resize: none;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+}
+
+.order-form__note {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: @basic-grey;
+}
+
+.order-form__button {
+  margin-bottom: 55px;
+}

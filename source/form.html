@@ -91,35 +91,33 @@
           <legend class="order-form__legend">ФИО</legend>
           <ul class="order-form__list">
             <li class="order-form__item order-form__item--text-input">
-              <label class="order-form__label" for="name">Имя:</label>
+              <label class="order-form__label order-form__label--text-input" for="name">Имя:</label>
               <input class="order-form__text-input" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
             </li>
             <li class="order-form__item order-form__item--text-input">
-              <label class="order-form__label" for="surname">Фамилия:</label>
+              <label class="order-form__label order-form__label--text-input" for="surname">Фамилия:</label>
               <input class="order-form__text-input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
             </li>
             <li class="order-form__item order-form__item--text-input">
-              <label class="order-form__label" for="patronymic">Отчество:</label>
+              <label class="order-form__label order-form__label--text-input" for="patronymic">Отчество:</label>
               <input class="order-form__text-input" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="order-form__field">
-          <ul class="order-form__list">
-            <li class="order-form__item order-form__item--text-input">
-              <label class="order-form__legend" for="phone">Тел</label>
-              <input class="order-form__text-input order-form__text-input--icon-phone" type="tel" id="phone" name="phone" placeholder="+7 XXX XXX XX XX*" required>
-            </li>
-            <li class="order-form__item order-form__item--text-input">
-              <label class="order-form__legend" for="email">E-mail</label>
-              <input class="order-form__text-input order-form__text-input--icon-email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
-            </li>
-            <li class="order-form__item order-form__item--text-input">
-              <label class="order-form__legend" for="more-info">Доп</label>
-              <textarea class="order-form__textarea" id="more-info" name="more-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </li>
-          </ul>
+          <label class="order-form__legend" for="phone">Тел</label>
+          <input class="order-form__text-input order-form__text-input--icon-phone" type="tel" id="phone" name="phone" placeholder="+7 XXX XXX XX XX*" required>
+        </fieldset>
+
+        <fieldset class="order-form__field">
+          <label class="order-form__legend" for="email">E-mail</label>
+          <input class="order-form__text-input order-form__text-input--icon-email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+        </fieldset>
+
+        <fieldset class="order-form__field">
+          <label class="order-form__legend" for="more-info">Доп</label>
+          <textarea class="order-form__textarea" id="more-info" name="more-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
 
         <p class="order-form__note">
