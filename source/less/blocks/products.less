@@ -2,12 +2,29 @@
   width: 260px;
   margin: auto;
   margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }
 
 .products__list {
   .no-list-style;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .products__item {
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
 }

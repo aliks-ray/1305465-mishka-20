@@ -1,14 +1,41 @@
 .product-of-the-week {
   padding-bottom: 42px;
   margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "title title title subtitle"
+      "description description image image"
+      "properties properties image image"
+      "price price image image"
+      "button button image image";
+    margin: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "subtitle title title title . ."
+      ". description description image image image"
+      ". properties properties image image image"
+      ". price price image image image"
+      ". button button image image image";
+    margin: 50px;
+  }
 }
 
 .product-of-the-week__title {
-  margin-left: 30px;
+  margin-left: 0;
   margin-bottom: 3.5px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+  grid-area: title;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 37.5px;
+  }
 }
 
 .product-of-the-week__subtitle {
@@ -20,6 +47,20 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @basic-green;
+  grid-area: subtitle;
+
+  @media (min-width: @tablet-width) {
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 45px;
+  }
 }
 
 .product-of-the-week__description {
@@ -29,6 +70,11 @@
   margin-bottom: 21px;
   line-height: 24px;
   color: @basic-grey;
+  grid-area: description;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .product-of-the-week__properties {
@@ -36,6 +82,11 @@
   margin: auto;
   margin-bottom: 28px;
   color: @basic-grey;
+  grid-area: properties;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .product-of-the-week__image {
@@ -43,6 +94,7 @@
   max-width: 100%;
   margin: auto;
   margin-bottom: 25px;
+  grid-area: image;
 }
 
 .product-of-the-week__price {
@@ -55,4 +107,17 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  grid-area: price;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.product-of-the-week__button {
+  grid-area: button;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
 }
