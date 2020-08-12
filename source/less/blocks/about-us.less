@@ -2,11 +2,25 @@
   width: 260px;
   margin: auto;
   margin-bottom: 58px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 718px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 225px;
+  }
 }
 
 .about-us__title {
   margin-bottom: 28px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }
 
 .about-us__list {
@@ -14,8 +28,38 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .about-us__item {
   margin-bottom: 32px;
+  max-width: 325px;
+
+  @media (min-width: @tablet-width){
+
+    &--materials {
+      order: -2;
+    }
+
+    &--hand-made {
+      order: -1;
+    }
+
+    &--likes {
+      order: 1;
+    }
+
+    &--package {
+      order: 2;
+    }
+
+
+  }
 }

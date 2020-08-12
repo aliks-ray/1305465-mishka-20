@@ -1,3 +1,22 @@
 .main-footer {
   background-color: @background-grey;
 }
+
+.main-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
+    padding-left: 50px;
+  }
+}
+
+.main-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
