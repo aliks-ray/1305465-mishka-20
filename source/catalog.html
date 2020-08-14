@@ -2,37 +2,48 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
-        </a>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+            <li class="site-list__item site-list__item--logo header-logo">
+              <a class="header-logo__link" href="index.html">
+                <img class="header-logo__image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+              </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--catalog">
+              <a>Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--form">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item">
-              <a href="">Поиск по сайту</a>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link" href="">Поиск по сайту</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--basket">
               <a href="">Корзина: пока пуста</a>
             </li>
+            <li class="site-list__item site-list__item--new">
+              <a href="">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--sale">
+              <a href="">Распродажа</a>
+            </li>
+            <li class="site-list__item site-list__item--delivery">
+              <a href="">Бесплатная доставка по России</a>
+            </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -112,24 +123,31 @@
     </main>
 
     <footer class="main-footer">
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link socials__link--instagram" href="" aria-label="instagram"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
-        </li>
-      </ul>
+      <div class="main-footer__wrapper">
 
-      <p class="developed">
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано
-          <img src="../img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        <a class="main-footer__logo">
+          <img src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
         </a>
-      </p>
+
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--instagram" href="" aria-label="instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
+          </li>
+        </ul>
+
+        <div class="developed">
+          <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p>Разработано</p>
+            <img class="developed__logo" src="../img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          </a>
+        </div>
+      </div>
     </footer>
 
   </body>
