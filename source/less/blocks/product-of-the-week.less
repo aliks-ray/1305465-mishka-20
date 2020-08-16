@@ -1,8 +1,14 @@
 .product-of-the-week {
   padding-bottom: 42px;
   margin-bottom: 31px;
+}
+
+.product-of-the-week__wrapper {
+  width: 260px;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
+    width: 668px;
     display: grid;
     grid-template-areas:
       "title title title subtitle"
@@ -10,10 +16,12 @@
       "properties properties image image"
       "price price image image"
       "button button image image";
-    margin: 50px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1050px;
+    min-height: 636px;
+    position: relative;
     display: grid;
     grid-template-areas:
       "subtitle title title title . ."
@@ -21,12 +29,10 @@
       ". properties properties image image image"
       ". price price image image image"
       ". button button image image image";
-    margin: 50px;
   }
 }
 
 .product-of-the-week__title {
-  margin-left: 0;
   margin-bottom: 3.5px;
   font-weight: bold;
   font-size: 25px;
@@ -39,7 +45,6 @@
 }
 
 .product-of-the-week__subtitle {
-  margin-left: 30px;
   margin-bottom: 17.5px;
   margin-top: 0;
   font-weight: bold;
@@ -64,8 +69,6 @@
 }
 
 .product-of-the-week__description {
-  width: 260px;
-  margin: auto;
   margin-top: 0;
   margin-bottom: 21px;
   line-height: 24px;
@@ -73,13 +76,12 @@
   grid-area: description;
 
   @media (min-width: @tablet-width) {
+    width: 292px;
     margin-left: 0;
   }
 }
 
 .product-of-the-week__properties {
-  width: 260px;
-  margin: auto;
   margin-bottom: 28px;
   color: @basic-grey;
   grid-area: properties;
@@ -95,12 +97,24 @@
   margin: auto;
   margin-bottom: 25px;
   grid-area: image;
+
+  @media (min-width: @tablet-width) {
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 525px;
+    height: 636px;
+    z-index: -1;
+  }
 }
 
 .product-of-the-week__price {
   display: block;
-  width: 260px;
-  margin: auto;
   margin-bottom: 24px;
   color: @basic-grey;
   text-align: center;
@@ -110,6 +124,7 @@
   grid-area: price;
 
   @media (min-width: @tablet-width) {
+    width: 292px;
     margin-left: 0;
   }
 }
@@ -118,6 +133,7 @@
   grid-area: button;
 
   @media (min-width: @tablet-width) {
+    width: 292px;
     margin-left: 0;
   }
 }
