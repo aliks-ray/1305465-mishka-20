@@ -1,6 +1,41 @@
 .product-of-the-week {
   padding-bottom: 42px;
   margin-bottom: 31px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 65px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.product-of-the-week:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  bottom: 0px;
+
+  @media (min-width: @tablet-width) {
+    height: 17px;
+    background-size: 71%;
+    bottom: -72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 23px;
+    background-size: 100%;
+    bottom: 72px;
+  }
 }
 
 .product-of-the-week__wrapper {
@@ -16,12 +51,14 @@
       "properties properties image image"
       "price price image image"
       "button button image image";
+    margin-bottom: 125px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
     min-height: 636px;
     position: relative;
+    left: -30px;
     display: grid;
     grid-template-areas:
       "subtitle title title title . ."
@@ -29,6 +66,8 @@
       ". properties properties image image image"
       ". price price image image image"
       ". button button image image image";
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -41,11 +80,17 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 37.5px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: 100px;
   }
 }
 
 .product-of-the-week__subtitle {
-  margin-bottom: 17.5px;
+  margin-bottom: 18px;
   margin-top: 0;
   font-weight: bold;
   font-size: 17px;
@@ -57,14 +102,19 @@
   @media (min-width: @tablet-width) {
     width: 100px;
     text-align: center;
+    line-height: 17px;
     margin: 0;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 5px;
+    padding-top: 25px;
     padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 45px;
+    padding-top: 27px;
+    padding-bottom: 0;
+    position: relative;
+    left: 72px;
   }
 }
 
@@ -78,16 +128,31 @@
   @media (min-width: @tablet-width) {
     width: 292px;
     margin-left: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    position: relative;
+    top: -2px;
+    left: 100px;
   }
 }
 
 .product-of-the-week__properties {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   color: @basic-grey;
   grid-area: properties;
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: 100px;
+    top: -33px;
   }
 }
 
@@ -95,18 +160,21 @@
   display: block;
   max-width: 100%;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 25.5px;
   grid-area: image;
 
   @media (min-width: @tablet-width) {
     width: 333px;
     height: 404px;
+    margin-top: 12px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: relative;
+    bottom: 167px;
+    right: -38px;
     width: 525px;
     height: 636px;
     z-index: -1;
@@ -115,7 +183,7 @@
 
 .product-of-the-week__price {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 24.5px;
   color: @basic-grey;
   text-align: center;
   font-weight: bold;
@@ -126,14 +194,33 @@
   @media (min-width: @tablet-width) {
     width: 292px;
     margin-left: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    position: relative;
+    left: 100px;
+    top: -33px;
   }
 }
 
 .product-of-the-week__button {
   grid-area: button;
+  padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     width: 292px;
     margin-left: 0;
+    margin-bottom:0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: 100px;
+    top: -166px;
+    font-size: 17px;
   }
 }

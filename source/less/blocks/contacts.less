@@ -1,7 +1,17 @@
 .contacts {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 73px;
+  }
+
   @media (min-width: @desktop-width) {
     position: relative;
     min-height: 457px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: 88px;
+    margin-bottom: 62px;
   }
 }
 
@@ -29,11 +39,13 @@
   padding-bottom: 27px;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
     padding-left: 50px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -88,7 +100,7 @@
   display: block;
   width: 320px;
   margin: auto;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -106,6 +118,8 @@
 
 .contacts__write-us {
   margin-bottom: 39px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
   @media (min-width: @desktop-width) {
     margin: 0;

@@ -1,4 +1,29 @@
+.product-properties {
+  width: 100%;
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    width: 292px;
+  }
+}
+
 .product-properties__name {
   font-weight: normal;
   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 97px;
+  }
+}
+
+.product-properties__value {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-properties__row {
+  border-bottom: 1px solid @special-grey;
 }
