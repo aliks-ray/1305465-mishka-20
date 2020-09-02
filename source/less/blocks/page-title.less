@@ -8,6 +8,39 @@
   font-size: 27px;
   line-height: 30px;
   background-color: @background-grey;
+
+  @media (min-width: @tablet-width) {
+    &--catalog-page {
+      font-size: 43px;
+      line-height: 50px;
+      padding-top: 100px;
+      margin-bottom: 80px;
+    }
+
+    &--form-page {
+      font-size: 43px;
+      line-height: 50px;
+      padding-top: 100px;
+      margin-bottom: 80px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &--catalog-page {
+      font-size: 53px;
+      line-height: 57px;
+      padding-top: 102px;
+      padding-bottom: 93px;
+      margin-bottom: 20px;
+    }
+
+    &--form-page {
+      font-size: 53px;
+      line-height: 57px;
+      padding-top: 102px;
+      padding-bottom: 93px;
+      margin-bottom: 130px;
+    }
+  }
 }
 
 .page-title--main-page {

@@ -9,7 +9,7 @@
   @media (min-width: @desktop-width) {
     display: block;
     width: 316px;
-    margin-left: 52px;
+    margin-left: 50px;
   }
 }
 
@@ -48,11 +48,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 32px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
     width: 316px;
     min-height: 197px;
+    padding-left: 26px;
   }
 }
 
@@ -63,8 +66,21 @@
   font-size: 17px;
   line-height: 24px;
 
+  &--big-toy-basket {
+    padding-bottom: 5px;
+    margin-top: -5px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--big-toy-basket {
+      padding-bottom: 2px;
+      margin-top: 0;
+    }
   }
 }
 
@@ -91,6 +107,7 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -106,4 +123,10 @@
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  position: absolute;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    right: 5px;
+  }
 }

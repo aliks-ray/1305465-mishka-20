@@ -11,20 +11,20 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--logo header-logo">
-              <a class="header-logo__link" href="index.html">
+              <a class="header-logo__link">
                 <img class="header-logo__image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
               </a>
+              <button class="site-list__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
             </li>
             <li class="site-list__item site-list__item--catalog">
               <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item site-list__item--form">
-              <a>Вязание на заказ</a>
+              <a href="form.html">Вязание на заказ</a>
             </li>
             <li class="site-list__item site-list__item--search">
               <a class="site-list__link" href="">Поиск по сайту</a>
@@ -46,8 +46,8 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-title">Вязание на заказ</h1>
+    <main class="page-main page-main--form-page">
+      <h1 class="page-title page-title--form-page">Вязание на заказ</h1>
 
       <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="order-form__field-wrapper">
@@ -159,7 +159,7 @@
       <div class="main-footer__wrapper">
 
         <a class="main-footer__logo">
-          <img src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+          <img class="main-footer__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
         </a>
 
         <ul class="socials">
