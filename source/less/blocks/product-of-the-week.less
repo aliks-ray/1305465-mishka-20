@@ -32,9 +32,13 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
+    width: 1050px;
     height: 23px;
     background-size: 100%;
-    bottom: 72px;
+    bottom: 93px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -58,7 +62,7 @@
     width: 1050px;
     min-height: 636px;
     position: relative;
-    left: -30px;
+    left: -38px;
     display: grid;
     grid-template-areas:
       "subtitle title title title . ."
@@ -120,13 +124,14 @@
 
 .product-of-the-week__description {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
   line-height: 24px;
   color: @basic-grey;
   grid-area: description;
 
   @media (min-width: @tablet-width) {
     width: 292px;
+    margin-bottom: 21px;
     margin-left: 0;
     font-size: 17px;
     line-height: 30px;
@@ -160,7 +165,7 @@
   display: block;
   max-width: 100%;
   margin: auto;
-  margin-bottom: 25.5px;
+  margin-bottom: 27px;
   grid-area: image;
 
   @media (min-width: @tablet-width) {
@@ -210,6 +215,7 @@
 .product-of-the-week__button {
   grid-area: button;
   padding-bottom: 14px;
+  padding-top: 14px;
 
   @media (min-width: @tablet-width) {
     width: 292px;

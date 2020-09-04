@@ -1,17 +1,14 @@
 .contacts {
   @media (min-width: @tablet-width) {
-    margin-bottom: 73px;
-  }
-
-  @media (min-width: @desktop-width) {
     position: relative;
     min-height: 457px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
-    top: 88px;
-    margin-bottom: 62px;
+    top: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -36,7 +33,7 @@
 
 .contacts__title {
   margin-top: 38px;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 0;
@@ -46,6 +43,7 @@
     line-height: 50px;
     padding-left: 50px;
     padding-bottom: 45px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,6 +51,41 @@
     line-height: 57px;
     margin-bottom: 0;
     padding-left: 0;
+    position: relative;
+    top: -47px;
+    left: 5px;
+  }
+}
+
+.contacts__title::after {
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    right: 53px;
+    top: -23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.contacts__title::before {
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    left: -112px;
+    top: -17px;
   }
 }
 
@@ -61,11 +94,14 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 49px;
-    padding-left: 50px;
+    padding-left: 47px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
+    position: relative;
+    top: -60px;
+    padding-bottom: 23px;
   }
 }
 
@@ -88,7 +124,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
-    margin-right: 50px;
+    margin-right: 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,10 +136,14 @@
   display: block;
   width: 320px;
   margin: auto;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
+  position: relative;
+  left: -30px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    margin-bottom: 48px;
+    left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -112,6 +152,7 @@
     height: 457px;
     bottom: 0;
     right: 0;
+    left: 524px;
     margin-bottom: 0;
   }
 }
@@ -121,8 +162,15 @@
   padding-top: 14px;
   padding-bottom: 14px;
 
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    font-size: 17px;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0;
     margin-bottom: 39px;
+    position: relative;
+    left: 5px;
   }
 }

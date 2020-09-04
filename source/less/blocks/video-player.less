@@ -13,4 +13,22 @@
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   border: none;
+
+  @media (min-width: @desktop-width) {
+    left: 341px;
+  }
+}
+
+.video-player__poster {
+  @media (min-width: @tablet-width) {
+    max-width: none;
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: none;
+    width: 682px;
+    height: 455px;
+  }
 }
