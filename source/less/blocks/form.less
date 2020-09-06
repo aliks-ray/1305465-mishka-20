@@ -79,7 +79,6 @@
   }
 
   @media (min-width: @desktop-width) {
-
     &--checkbox {
       margin-top: 25px;
       padding-bottom: 27px;
@@ -283,6 +282,8 @@
 
     &--text-input {
       display: flex;
+      padding-top: 24px;
+      margin-bottom: 0;
     }
 
     &--radio {
@@ -300,11 +301,6 @@
     &--checkbox:nth-child(3) {
       margin-right: 65px;
     }
-
-    &--text-input {
-      padding-top: 24px;
-      margin-bottom: 0;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -317,7 +313,7 @@
     }
 
     &--checkbox:nth-child(2),
-    &--checkbox:nth-child(5){
+    &--checkbox:nth-child(5) {
       min-width: 265px;
     }
   }
@@ -534,6 +530,7 @@
   @media (min-width: @tablet-width) {
     background-position: 429px -4px;
   }
+
   @media (min-width: @desktop-width) {
     background-position: 648px -4px;
   }
