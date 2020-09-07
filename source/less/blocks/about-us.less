@@ -8,20 +8,25 @@
     min-width: 768px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 75px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 170px;
+    padding-left: 175px;
     padding-right: 0;
+    padding-bottom: 53px;
     min-width: 1050px;
+    position: relative;
+    top: -72px;
   }
 }
 
 .about-us__title {
   margin-bottom: 28px;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
     text-align: left;
   }
 }
@@ -37,17 +42,69 @@
     line-height: 22px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
 .about-us__item {
-  margin-bottom: 32px;
-  max-width: 325px;
+  margin-bottom: 28px;
+  padding-top: 54px;
+  max-width: 260px;
+
+  &--materials {
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 0;
+  }
+
+  &--price {
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--likes {
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 6px 5px;
+    padding-top: 56px;
+  }
+
+  &--hand-made {
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+    padding-top: 56px;
+  }
+
+  &--producers {
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+  }
+
+  &--package {
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+    padding-top: 56px;
+  }
 
   @media (min-width: @tablet-width) {
+    padding-top: 56px;
+
     &--materials {
       order: -2;
+      margin-bottom: 56px;
+      margin-right: 130px;
+    }
+
+    &--price {
+      margin-bottom: 56px;
+      margin-right: 100px;
+    }
+
+    &--producers {
+      max-width: 300px;
     }
 
     &--hand-made {
@@ -56,6 +113,37 @@
 
     &--likes {
       order: 1;
+      margin-bottom: 56px;
+      margin-right: 125px;
+    }
+
+    &--package {
+      order: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--materials {
+      margin-bottom: 56px;
+      margin-right: 146px;
+    }
+
+    &--price {
+      margin-bottom: 56px;
+      margin-right: 116px;
+    }
+
+    &--producers {
+      max-width: 300px;
+    }
+
+    &--hand-made {
+      order: -1;
+    }
+
+    &--likes {
+      margin-bottom: 56px;
+      margin-right: 139px;
     }
 
     &--package {

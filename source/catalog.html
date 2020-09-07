@@ -11,17 +11,17 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--logo header-logo">
-              <a class="header-logo__link" href="index.html">
+              <a class="header-logo__link">
                 <img class="header-logo__image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
               </a>
+              <button class="site-list__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
             </li>
             <li class="site-list__item site-list__item--catalog">
-              <a>Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item site-list__item--form">
               <a href="form.html">Вязание на заказ</a>
@@ -46,8 +46,8 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-title">Каталог товаров</h1>
+    <main class="page-main page-main--catalog-page">
+      <h1 class="page-title page-title--catalog-page">Каталог товаров</h1>
 
       <section class="products">
         <div class="products__wrapper">
@@ -59,8 +59,8 @@
               </a>
               <div class="product-card__wrapper">
                 <div class="product-card__text-wrapper">
-                  <p class="product-card__title">
-                    <a href="">Зайчик попрыгайчик</a>
+                  <p class="product-card__title roduct-card__title--rabbit">
+                    <a href="">Зайчик-попрыгайчик</a>
                   </p>
                   <p class="product-card__description">Рост 30 см, вес 200 г</p>
                 </div>
@@ -76,7 +76,7 @@
               </a>
               <div class="product-card__wrapper">
                 <div class="product-card__text-wrapper">
-                  <p class="product-card__title">
+                  <p class="product-card__title product-card__title--laundry-basket">
                     <a href="">Корзинка для белья</a>
                   </p>
                   <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
@@ -93,8 +93,8 @@
               </a>
               <div class="product-card__wrapper">
                 <div class="product-card__text-wrapper">
-                  <p class="product-card__title">
-                    <a href="">Большая корзинка для игрушек</a>
+                  <p class="product-card__title product-card__title--big-toy-basket">
+                    <a href="">Большая корзинка<br>для игрушек</a>
                   </p>
                   <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
                 </div>
@@ -126,7 +126,7 @@
       <div class="main-footer__wrapper">
 
         <a class="main-footer__logo">
-          <img src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+          <img class="main-footer__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
         </a>
 
         <ul class="socials">

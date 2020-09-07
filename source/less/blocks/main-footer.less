@@ -4,12 +4,21 @@
 
 .main-footer__wrapper {
   @media (min-width: @tablet-width) {
+    width: 768px;
+    min-height: 143px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 51px;
+    padding-top: 45px;
     padding-bottom: 58px;
-    padding-left: 50px;
+    padding-left: 47px;
+    padding-right: 47px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+    margin: auto;
   }
 }
 
@@ -18,5 +27,15 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    width: 102px;
+    height: 34px;
+  }
+}
+
+.main-footer__logo-image {
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 102px;
+    height: 34px;
   }
 }

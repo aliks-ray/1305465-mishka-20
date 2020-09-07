@@ -2,13 +2,14 @@
   width: 260px;
   box-sizing: border-box;
   margin: auto;
-  margin-bottom: 58px;
+  margin-bottom: 57px;
   border: 1px solid @special-grey;
 
   @media (min-width: @tablet-width) {
     width: 668px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,38 +17,50 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 112px;
+    margin-bottom: 103px;
   }
 }
 
 .production-process__title {
-  margin-top: 22px;
+  margin-top: 20px;
   margin-bottom: 26px;
   padding-left: 90px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 32px 8px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    padding-left: 105px;
+    background-position: 41px 15px;
+    margin-top: 0;
+    padding-top: 22px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 22px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
-    padding-left: 0;
-    padding-top: 96px;
+    padding-top: 73px;
+    padding-left: 62px;
+    padding-right: 62px;
+    background-position: 62px 20px;
   }
 }
 
 .production-process__video-player {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     width: 668px;
     height: 455px;
     order: -1;
+    margin-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -55,6 +68,7 @@
     grid-row-end: -1;
     grid-column-start: 1;
     grid-column-end: 2;
+    margin-bottom: 0;
   }
 }
 
@@ -69,6 +83,8 @@
   @media (min-width: @tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -76,7 +92,7 @@
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
-    padding-left: 0;
+    padding-left: 62px;
     padding-right: 36px;
     padding-bottom: 51px;
   }
@@ -90,12 +106,14 @@
 
   @media (min-width: @tablet-width) {
     width: 584px;
+    margin-bottom: 44px;
+    font-size: 17px;
   }
 
   @media (min-width: @desktop-width) {
     width: 230px;
     margin-bottom: 60px;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 62px;
   }
 }

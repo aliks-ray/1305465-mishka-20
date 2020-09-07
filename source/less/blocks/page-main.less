@@ -1,0 +1,41 @@
+.page-main {
+  @media (min-width: @tablet-width) {
+    margin-top: -80px;
+  }
+}
+
+.page-main--catalog-page::after {
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100%;
+    bottom: 396px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 374px;
+  }
+}
+
+.page-main--form-page::after {
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100%;
+    bottom: 396px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 374px;
+  }
+}

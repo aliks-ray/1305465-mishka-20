@@ -1,17 +1,24 @@
 .adress__title {
   vertical-align: top;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-right: 23px;
+  }
+}
+
+.adress__value {
+  padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
   }
 }
 
-.adress__value {
-  padding-top: 20px;
-
+.adress__break {
   @media (min-width: @tablet-width) {
-    padding-top: 0;
+    display: none;
   }
 }

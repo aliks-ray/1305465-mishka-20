@@ -4,6 +4,12 @@
   background-color: @basic-white;
   border-top: 1px solid @special-grey;
   border-bottom: 1px solid @special-grey;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    z-index: 2;
+    border-bottom: none;
+  }
 }
 
 .page-header__wrapper {
