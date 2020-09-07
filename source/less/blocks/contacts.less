@@ -157,6 +157,30 @@
   }
 }
 
+.contacts__map::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -85%);
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 67px;
+  height: 100px;
+  background-color: transparent;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    transform: translate(-30%, -95%);
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translate(-35%, -82%);
+  }
+}
+
 .contacts__write-us {
   margin-bottom: 39px;
   padding-top: 14px;
