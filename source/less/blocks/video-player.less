@@ -13,10 +13,24 @@
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   border: none;
+  outline: none;
 
   @media (min-width: @desktop-width) {
     left: 341px;
   }
+}
+
+.video-player__button:hover {
+  transform: scale(1.2);
+  top: 45%;
+  left: 45%;
+}
+
+.video-player__button:active {
+  opacity: 0.3;
+  transform: scale(0.8);
+  top: 50%;
+  left: 50%;
 }
 
 .video-player__poster {

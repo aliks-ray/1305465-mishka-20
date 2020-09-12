@@ -501,7 +501,7 @@
 }
 
 .order-form__text-input::placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  opacity: 0.3;
 }
 
 .order-form__text-input--icon-phone::placeholder {
@@ -552,6 +552,7 @@
   font-size: 17px;
   line-height: 18px;
   color: @basic-grey;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
@@ -567,6 +568,15 @@
 
 .order-form__textarea::placeholder {
   color: rgba(68, 68, 68, 0.3);
+}
+
+.order-form__textarea:hover {
+  border: 2px solid @special-green;
+}
+
+.order-form__textarea:focus {
+  border: 2px solid @special-green;
+  color: @basic-black;
 }
 
 .order-form__note {
