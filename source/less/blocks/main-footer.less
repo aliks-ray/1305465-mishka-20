@@ -3,6 +3,10 @@
 }
 
 .main-footer__wrapper {
+  width: 270px;
+  margin: auto;
+  padding-left: 10px;
+
   @media (min-width: @tablet-width) {
     width: 768px;
     min-height: 143px;
@@ -34,11 +38,11 @@
   }
 }
 
-.main-footer__logo-image {
-  @media (min-width: @tablet-width) {
-    display: block;
-    width: 102px;
-    height: 34px;
-    margin-bottom: 10px;
-  }
+.main-footer__logo-image:hover {
+  fill: @middle-green;
+}
+
+.main-footer__logo-image:active {
+  fill: @middle-green;
+  opacity: 0.3;
 }

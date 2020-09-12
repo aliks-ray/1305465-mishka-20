@@ -21,7 +21,7 @@
 
 .developed__link {
   display: flex;
-  width: 27px;
+  width: 220px;
   min-height: 34px;
 
   @media (min-width: @tablet-width) {
@@ -31,4 +31,14 @@
 
 .developed__logo {
   margin-left: 27px;
+  margin-top: 10px;
+}
+
+.developed__link:hover .developed__logo {
+  fill: @middle-green;
+}
+
+.developed__link:active .developed__logo {
+  fill: @middle-green;
+  opacity: 0.3;
 }
