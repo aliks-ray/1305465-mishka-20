@@ -91,6 +91,8 @@
 }
 
 .order-form__field-wrapper {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: flex;
     width: 768px;
@@ -394,6 +396,26 @@
   }
 }
 
+.order-form__input[type="radio"]:hover + .order-form__label--radio::before,
+.order-form__input[type="checkbox"]:hover + .order-form__label--checkbox::before {
+  border-color: @special-green;
+}
+
+.order-form__input[type="radio"]:active + .order-form__label--radio::before,
+.order-form__input[type="checkbox"]:active + .order-form__label--checkbox::before {
+  border-color: @basic-black;
+  opacity: 0.3;
+}
+
+.order-form__text-input:hover {
+  border-bottom: 2px solid @special-green;
+}
+
+.order-form__text-input:focus {
+  border-bottom: 2px solid @special-green;
+  color: @basic-grey;
+}
+
 .order-form__input:checked + .order-form__label--radio::after {
   position: absolute;
   content: "";
@@ -468,6 +490,7 @@
   background-color: transparent;
   padding-top: 4px;
   padding-left: 0;
+  outline: none;
 
   &--icon-phone {
     padding-top: 0;
@@ -504,36 +527,47 @@
   opacity: 0.3;
 }
 
-.order-form__text-input--icon-phone::placeholder {
-  width: 25px;
-  height: 24px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 226px 0;
+.order-form__icon {
+  opacity: 0.2;
+  position: absolute;
+  top: 32px;
 
-  @media (min-width: @tablet-width) {
-    background-position: 433px 0;
+  &--phone {
+    right: 6px;
   }
 
-  @media (min-width: @desktop-width) {
-    background-position: 650px 0;
+  &--email {
+    right: 4px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 11px;
+  }
+
+  &--phone {
+    right: 75px;
+  }
+
+  &--email {
+    right: 71px;
+  }
+
+  @media (min-width: @tablet-width) {
+
+    &--phone {
+      right: 234px;
+    }
+
+    &--email {
+      right: 229px;
+    }
   }
 }
 
-.order-form__text-input--icon-email::placeholder {
-  width: 32px;
-  height: 22px;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: 224px -4px;
-
-  @media (min-width: @tablet-width) {
-    background-position: 429px -4px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-position: 648px -4px;
-  }
+.order-form__text-input:hover + .order-form__icon,
+ .order-form__text-input:focus + .order-form__icon {
+  fill: @special-green;
+  opacity: 1;
 }
 
 .order-form__textarea {

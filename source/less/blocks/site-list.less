@@ -227,12 +227,29 @@
 }
 
 .site-list__toggle {
+  display: none;
   width: 21px;
   height: 20px;
   position: absolute;
   right: 30px;
   top: 26px;
   background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.site-list__toggle-closed {
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  top: 26px;
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;

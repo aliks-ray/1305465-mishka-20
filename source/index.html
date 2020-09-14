@@ -5,7 +5,7 @@
     <meta name="viewport"
       content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
 
@@ -583,26 +583,29 @@
     </footer>
 
     <div class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="modal__form size-form" action="https://echo.htmlacademy.ru" method="get">
-        <ul class="modal__list size">
-          <li class="size__item">
-            <input class="size__input" type="radio" name="size" value="small" id="size-s" checked>
-            <label class="size__label" for="size-s">S</label>
-          </li>
-          <li class="size__item">
-            <input class="size__input" type="radio" name="size" value="middle" id="size-m">
-            <label class="size__label" for="size-m">M</label>
-          </li>
-          <li class="size__item">
-            <input class="size__input" type="radio" name="size" value="large" id="size-l">
-            <label class="size__label" for="size-l">L</label>
-          </li>
-        </ul>
-        <button class="size-form__button" type="submit">Добавить</button>
-      </form>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__form size-form" action="https://echo.htmlacademy.ru" method="get">
+          <ul class="modal__list size">
+            <li class="size__item">
+              <input class="size__input" type="radio" name="size" value="small" id="size-s" checked>
+              <label class="size__label" for="size-s">S</label>
+            </li>
+            <li class="size__item">
+              <input class="size__input" type="radio" name="size" value="middle" id="size-m">
+              <label class="size__label" for="size-m">M</label>
+            </li>
+            <li class="size__item">
+              <input class="size__input" type="radio" name="size" value="large" id="size-l">
+              <label class="size__label" for="size-l">L</label>
+            </li>
+          </ul>
+          <button class="size-form__button" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
 
+    <script src="js/script.min.js"></script>
   </body>
 </html>

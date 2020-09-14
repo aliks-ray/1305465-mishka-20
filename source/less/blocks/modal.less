@@ -1,5 +1,20 @@
 .modal {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(@basic-white, 0.9);
+}
+
+.modal__active {
+  display: block;
+}
+
+.modal__wrapper {
+  display: block;
   text-align: center;
   box-sizing: border-box;
   position: fixed;
