@@ -1,9 +1,12 @@
 .order-form {
-  width: 260px;
+  width: 320px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin: auto;
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -36,11 +39,11 @@
   margin-right: 0;
 
   &--radio {
-    margin-top: 27px;
+    margin-top: 25px;
   }
 
   &--checkbox {
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   &--name {
@@ -102,6 +105,10 @@
 
     &--note {
       flex-direction: row-reverse;
+      justify-content: space-around;
+      width: 800px;
+      padding-left: 60px;
+      padding-right: 40px;
     }
   }
 
@@ -194,7 +201,7 @@
   height: 1px;
   background-color: @basic-green;
   top: 50%;
-  right: 0;
+  left: 60px;
 
   @media (min-width: @tablet-width) {
     display: none;

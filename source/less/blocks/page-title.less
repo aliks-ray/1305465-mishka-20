@@ -9,17 +9,39 @@
   line-height: 30px;
   background-color: @background-grey;
 
-  &--form-page {
-    padding-left: 35px;
+  &--main-page {
+    background-color: transparent;
+    width: 320px;
     padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--form-page {
+    padding-left: 15px;
+    padding-right: 0;
     margin-bottom: 18px;
   }
 
   @media (min-width: @tablet-width) {
+    &--main-page {
+      width: 768px;
+      font-size: 43px;
+      line-height: 50px;
+      padding-top: 0;
+      padding-right: 50px;
+      padding-left: 50px;
+      padding-bottom: 0;
+    }
+
     &--catalog-page {
       font-size: 43px;
       line-height: 50px;
       padding-top: 100px;
+      padding-left: 45px;
+      padding-right: 30px;
       margin-bottom: 80px;
     }
 
@@ -32,12 +54,19 @@
   }
 
   @media (min-width: @desktop-width) {
+    &--main-page {
+      font-size: 53px;
+      line-height: 57px;
+      width: 1050px;
+    }
+
     &--catalog-page {
       font-size: 53px;
       line-height: 57px;
       padding-top: 102px;
       padding-bottom: 93px;
-      padding-left: 27px;
+      padding-left: 70px;
+      padding-right: 50px;
       margin-bottom: 130px;
     }
 
@@ -58,7 +87,7 @@
   padding-bottom: 48px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -20px;
+  background-position: 47% 22%;
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -70,7 +99,7 @@
     padding-top: 155px;
     padding-bottom: 372px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: center 0;
+    background-position: 48% 0;
     position: relative;
     z-index: 1;
     border-top: 1px solid @special-grey;
@@ -86,41 +115,10 @@
     padding-top: 158px;
     padding-bottom: 355px;
     background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 48% 1%;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
-  }
-}
-
-.page-title--main-page {
-  background-color: transparent;
-  padding-top: 0;
-  width: 260px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 12px;
-  padding-right: 0;
-
-  @media (min-width: @tablet-width) {
-    width: 668px;
-    font-size: 43px;
-    line-height: 50px;
-    padding-top: 0;
-    padding-left: 15px;
-    padding-right: 0;
-    padding-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 53px;
-    line-height: 57px;
-    width: 700px;
-  }
-}
-
-.page-title__first-break {
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }

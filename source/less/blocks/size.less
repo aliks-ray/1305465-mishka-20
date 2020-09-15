@@ -1,0 +1,31 @@
+.size__item {
+  .no-list-style;
+}
+
+.size__input {
+  display: none;
+}
+
+.size__label {
+  display: block;
+  width: 82px;
+  height: 52px;
+  padding: 18px 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
+}
+
+.size__input:checked + .size__label {
+  border: 2px solid @special-green;
+}
+
+.size__label:hover {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}

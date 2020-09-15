@@ -1,7 +1,23 @@
 .production-process {
+  width: 320px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
+}
+
+.production-process__wrapper {
   width: 260px;
   box-sizing: border-box;
-  margin: auto;
   margin-bottom: 57px;
   border: 1px solid @special-grey;
 
@@ -21,11 +37,11 @@
   }
 }
 
-.production-process:hover {
+.production-process__wrapper:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.production-process:active {
+.production-process__wrapper:active {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 

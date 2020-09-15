@@ -22,13 +22,12 @@
   height: 6px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-size: auto 100%;
+  background-size: 102%;
   bottom: 0;
 
   @media (min-width: @tablet-width) {
     height: 17px;
-    background-size: 71%;
-    bottom: -72px;
+    bottom: -70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,12 +42,16 @@
 }
 
 .product-of-the-week__wrapper {
-  width: 270px;
-  margin: auto;
-  padding-left: 10px;
+    width: 320px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
   @media (min-width: @tablet-width) {
-    width: 668px;
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
     display: grid;
     grid-template-areas:
       "title title title subtitle"
@@ -57,14 +60,12 @@
       "price price image image"
       "button button image image";
     margin-bottom: 125px;
-    padding-left: 8px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    width: 1150px;
     min-height: 636px;
     position: relative;
-    left: -30px;
     display: grid;
     grid-template-areas:
       "subtitle title title title . ."
@@ -73,7 +74,6 @@
       ". price price image image image"
       ". button button image image image";
     margin-bottom: 0;
-    padding-bottom: 0;
   }
 }
 
@@ -91,7 +91,7 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    left: 100px;
+    left: 63px;
   }
 }
 
@@ -110,9 +110,9 @@
     text-align: center;
     line-height: 17px;
     margin: 0;
-    padding-top: 25px;
+    padding-top: 23px;
     padding-bottom: 30px;
-    padding-left: 8px;
+    padding-right: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -120,7 +120,7 @@
     padding-bottom: 0;
     padding-left: 0;
     position: relative;
-    left: 72px;
+    left: 35px;
   }
 }
 
@@ -143,7 +143,7 @@
     margin-bottom: 0;
     position: relative;
     top: -2px;
-    left: 100px;
+    left: 63px;
   }
 }
 
@@ -158,7 +158,7 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    left: 100px;
+    left: 63px;
     top: -33px;
   }
 }
@@ -180,13 +180,12 @@
     margin-right: 0;
     margin-bottom: 0;
     position: relative;
-    left: 8px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     bottom: 167px;
-    right: -38px;
+    right: 0;
     width: 525px;
     height: 636px;
     z-index: -1;
@@ -214,7 +213,7 @@
   @media (min-width: @desktop-width) {
     padding: 0;
     position: relative;
-    left: 100px;
+    left: 63px;
     top: -33px;
   }
 }
@@ -228,12 +227,12 @@
     width: 292px;
     margin-left: 0;
     margin-bottom: 0;
+    font-size: 17px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
-    left: 100px;
+    left: 63px;
     top: -166px;
-    font-size: 17px;
   }
 }

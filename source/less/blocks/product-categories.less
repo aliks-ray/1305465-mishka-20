@@ -1,5 +1,5 @@
 .product-categories__wrapper {
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     margin-left: 50px;
@@ -26,12 +26,13 @@
     height: 24px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: 100%;
+    background-size: 102%;
     bottom: -12px;
   }
 
   @media (min-width: @desktop-width) {
     bottom: -6px;
+    background-size: 112%;
   }
 }
 
@@ -80,6 +81,13 @@
 
 .product-categories__link {
   display: flex;
+  margin: auto;
+  width: 320px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: auto;
+  }
 }
 
 .product-categories__text {
@@ -134,10 +142,20 @@
   }
 }
 
+.product-categories__item:hover .product-categories__icon {
+  opacity: 0.7;
+}
+
+.product-categories__item:active .product-categories__icon {
+  opacity: 0.3;
+}
+
 .product-categories__item--interior:hover {
   transform: translateY(-5px);
+  box-shadow: 0 5px 0 0 @basic-green;
 }
 
 .product-categories__item--toys:hover {
   transform: translateY(-5px);
+  box-shadow: 0 5px 0 0 @dark-green;
 }

@@ -6,6 +6,7 @@
       content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
 
@@ -99,7 +100,7 @@
         </path>
       </symbol>
       <symbol id="interior" viewBox="-259.404 -19.675 40.219 62.411">
-        <g>
+        <g fill="#149080">
           <path d="M-244.227,18.283c-0.286,0.966-0.245,2.191,0.027,3.639c0.494,2.635,1.687,6.041,2.358,9.67h5.062
             c0.696-3.641,1.949-7.05,2.471-9.683c0.287-1.445,0.33-2.66,0.041-3.617c-0.275-0.899-0.89-1.618-2.021-2.303h-5.997
             C-243.361,16.668-243.96,17.38-244.227,18.283z">
@@ -126,7 +127,7 @@
         </g>
       </symbol>
       <symbol id="toys" viewBox="226.001 226.19 60 59.62">
-        <path fill="#231F20" d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453
+        <path fill="#149080" d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453
           c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073
           c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086
           c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586
@@ -329,7 +330,7 @@
         </g>
       </symbol>
       <symbol id="html-academy" viewBox="0 0 26.943 34.09">
-        <path fill="#63D1BB" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z">
+        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z">
         </path>
       </symbol>
     </svg>
@@ -358,18 +359,18 @@
             </li>
             <li class="site-list__item site-list__item--search">
               <a class="site-list__link" href="">
-                <svg class="site-list__icon--search" width="18" height="18">
+                <svg class="site-list__icon site-list__icon--search" width="18" height="18">
                   <use xlink:href="#icon-search"></use>
                 </svg>
-                <span class="site-list__text--search">Поиск по сайту</span>
+                <span class="site-list__text site-list__text--search">Поиск по сайту</span>
               </a>
             </li>
             <li class="site-list__item site-list__item--basket">
               <a href="">
-                <svg class="site-list__icon--basket" width="20" height="19">
+                <svg class="site-list__icon site-list__icon--basket" width="20" height="19">
                   <use xlink:href="#icon-basket"></use>
                 </svg>
-                <span class="site-list__text--basket">Корзина: пока пуста</span>
+                <span class="site-list__text site-list__text--basket">Корзина: пока пуста</span>
               </a>
             </li>
             <li class="site-list__item site-list__item--new">
@@ -389,9 +390,7 @@
     <main class="page-main page-main--main-page">
       <div class="page-title-wrapper">
         <h1 class="page-title page-title--main-page">
-          Милые штуки<br class="page-title__first-break">
-          ручной<br class="page-title__second-break">
-          работы для дома
+          Милые штуки ручной<br>работы для дома
         </h1>
       </div>
 
@@ -449,7 +448,7 @@
             <img class="product-of-the-week__image" src="../img/triple-set-mobile@1x.jpg" srcset="../img/triple-set-mobile@1x.jpg 1x, ../img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзины трех размеров">
           </picture>
           <span class="product-of-the-week__price">Цена: 990 руб.</span>
-          <button class="button product-of-the-week__button">Заказать</button>
+          <button class="button product-of-the-week__button js-modal-button">Заказать</button>
         </div>
       </section>
 
@@ -515,14 +514,14 @@
               <tr class="contacts__row adress">
                 <td class="adress__title">адрес:</td>
                 <td class="adress__value">
-                  г. Санкт-Петербург,<br>
-                  ул. Большая<br class="adress__break">
-                  Конюшенная,<br>
+                  г. Санкт-Петербург, <br>
+                  ул. Большая Конюшенная, <br>
                   д. 19/8, офис 101</td>
               </tr>
             </tbody>
           </table>
           <div class="contacts__map">
+            <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002721!2d30.320858715645702!3d59.938719169054814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598617378459!5m2!1sru!2sru" allowfullscreen aria-hidden="false" tabindex="0" title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="../img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="../img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
