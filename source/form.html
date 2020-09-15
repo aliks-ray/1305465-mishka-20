@@ -6,6 +6,7 @@
       content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
   </head>
   <body class="page-body">
     <svg style="display: none">
@@ -355,9 +356,9 @@
             <li class="site-list__item site-list__item--logo header-logo">
               <a href="index.html" class="header-logo__link">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-                  <img class="header-logo__image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
                 </picture>
               </a>
               <button class="site-list__toggle" type="button">
@@ -518,7 +519,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
 
-        <a class="main-footer__logo">
+        <a class="main-footer__logo" aria-label="Логотип интернет-магазина Мишка">
           <svg class="main-footer__logo-image" width="102" height="34">
             <use xlink:href="#footer-logo"></use>
           </svg>

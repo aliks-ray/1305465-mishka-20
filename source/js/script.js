@@ -2,7 +2,7 @@ const modalBasket = document.querySelector(".modal");
 const basketButton = document.querySelectorAll(".js-modal-button");
 
 basketButton.forEach(function (btn) {
-  btn.addEventListener('click', function (evt) {
+  btn.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalBasket.classList.add("modal__active");
     modalForm.classList.add("modal-wrapper--active");
