@@ -8,15 +8,19 @@
   padding-left: 30px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 23px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
     min-height: 143px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 45px;
-    padding-bottom: 58px;
+    padding-top: 30px;
+    padding-bottom: 51px;
     padding-right: 50px;
     padding-left: 50px;
     margin: auto;
@@ -29,12 +33,13 @@
 
 .main-footer__logo {
   display: none;
+  width: 102px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 102px;
-    height: 34px;
-    margin-bottom: 13px;
   }
 }
 

@@ -1,14 +1,15 @@
 .testimonials {
-  margin-bottom: 89px;
+  margin-bottom: 77px;
   position: relative;
+  top: -8px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 130px;
-    top: -42px;
+    top: -115px;
   }
 }
 
@@ -35,7 +36,7 @@
     width: 1050px;
     height: 23px;
     background-size: 100%;
-    bottom: -15px;
+    bottom: -70px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -60,7 +61,7 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: -50px;
+    padding-bottom: 51px;
     background-size: 350px;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -74,6 +75,7 @@
     padding-top: 35px;
     padding-bottom: 30px;
     width: 1050px;
+    top: 0;
     background-position: 0 0;
   }
 }
@@ -144,6 +146,7 @@
 .testimonials__button-wrapper {
   display: flex;
   margin-bottom: 38px;
+  position: relative;
 }
 
 .testimonials__button {
@@ -169,15 +172,15 @@
     &--prev {
       position: absolute;
       border: none;
-      bottom: 68px;
-      right: 115px;
+      bottom: 30px;
+      right: 65px;
     }
 
     &--next {
       position: absolute;
       border: none;
-      bottom: 68px;
-      right: 27px;
+      bottom: 30px;
+      right: -23px;
     }
   }
 
@@ -185,14 +188,12 @@
     &--prev {
       position: absolute;
       border: none;
-      bottom: 100px;
       right: 65px;
     }
 
     &--next {
       position: absolute;
       border: none;
-      bottom: 100px;
       right: -24px;
     }
   }
